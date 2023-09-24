@@ -2,17 +2,17 @@
 
 @keyframes glitch {
     0% {
-      transform: translate(0);
+      transform: translate(0, 8px);
     }
 
 
     50% {
-      transform: translate(-2px, 2px);
+        transform: translate(0, 0px);
     }
 
 
     100% {
-      transform: translate(0);
+        transform: translate( 0px, 8px);
     }
   }
   
@@ -24,7 +24,7 @@
     background-image: url('/unrendered1.jpg');
     background-size: 125%;
     background-repeat: no-repeat;
-    animation: glitch 1s infinite; /* Apply the glitch animation */
+    animation: glitch 4s infinite ease-in-out; /* Apply the glitch animation */
 }
   
   
@@ -39,20 +39,29 @@
     padding: 20px;
   }
   
+  #h1Container {
+    padding: 10px;
+    background-color: #000080; /* Blue title bar color */
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #Dots {
+    width: 1px;
+  }
   /* Title Bar (Header) */
   h1 {
-    background-color: #000080; /* Blue title bar color */
     color: #ffffff; /* Text color on title bar */
     margin: 0;
-    margin-bottom: 5%;
-    padding: 10px;
     text-align: center;
+    justify-content: center;
   }
   
   /* Input and Button */
   input[type="text"] {
     padding: 10px;
-    width: 60%;
+    width: 75%;
     border: 1px solid #000000; /* Input border */
     height: 20%;
     font-family: 'Press Start 2P', Arial, sans-serif;
@@ -83,11 +92,10 @@
   }
 
   .hidden {
-    display: flex;
+    display: none;
   }
   
   #loading {
-    display: flex;
     font-size: 24px;
     text-align: center;
     margin-top: 20px;

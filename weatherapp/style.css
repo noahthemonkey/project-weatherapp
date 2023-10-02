@@ -17,15 +17,14 @@
   }
   
   body {
-
     font-family: 'Press Start 2P', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('/unrendered1.jpg');
+    background-image: url('https://i.imgur.com/3EbPD84.jpg'); /* Use the direct URL to your image */
     background-size: 125%;
     background-repeat: no-repeat;
     animation: glitch 4s infinite ease-in-out; /* Apply the glitch animation */
-}
+  }
   
   
   /* Container */
